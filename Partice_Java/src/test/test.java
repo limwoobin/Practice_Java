@@ -2,14 +2,14 @@ package test;
 
 public class test {
     public static void main(String[] args) {
-        double dd = 2.544;
-        int aa = (int) dd;
-        System.out.println(dd);
-        System.out.println(aa);
+        float f1 = 1234;
+        float f2 = 9.1234567f;
+        double d1 = 9.1234567;
+        double d2 = 9.1234567;
+        System.out.println(f1);
+        System.out.println(f2);
 
-        int a = 32;
-        double d = a;
-        System.out.println(a);
-        System.out.println(d);
+        System.out.println(d1);
+        System.out.println(d2);
     }
 }
