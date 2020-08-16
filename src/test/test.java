@@ -2,14 +2,25 @@ package test;
 
 public class test {
     public static void main(String[] args) {
-        float f1 = 1234;
-        float f2 = 9.1234567f;
-        double d1 = 9.1234567;
-        double d2 = 9.1234567;
-        System.out.println(f1);
-        System.out.println(f2);
+        A a = new A();
+        B b = new B();
+        System.out.println(a instanceof A);
+        System.out.println(b instanceof B);
+        System.out.println(b instanceof A);
 
-        System.out.println(d1);
-        System.out.println(d2);
+
+
+        A a1 = new B();
+        Object o1 = new B();
+//        B b1 = (B) new A(); 런타임 오류
+        B b2 = (B) a1;
     }
+}
+
+class A {
+
+}
+
+class B extends A {
+
 }
