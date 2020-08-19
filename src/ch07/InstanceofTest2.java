@@ -17,6 +17,7 @@ public class InstanceofTest2 {
         System.out.println(obj instanceof A_Parent);
 
         InstanceTest instanceTest = new InstanceTest();
+
         instanceTest.equalsTest(new InstanceTest());
     }
 }
