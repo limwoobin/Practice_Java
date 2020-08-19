@@ -2,35 +2,11 @@ package test;
 
 public class test {
     public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
-        System.out.println(a instanceof A);
-        System.out.println(b instanceof B);
-        System.out.println(b instanceof A);
+        String a = "935a2cdd-3d5c-4fc2-a7b0-18e462f5239f";
+        String b = "bde14643-6ce2-469c-93ff-1d1d948ed85c";
+        System.out.println(a.length());
+        System.out.println(b.length());
 
-
-
-        A a1 = new B();
-        Object o1 = new B();
-//        B b1 = (B) new A(); 런타임 오류
-        B b2 = (B) a1;
-
-        String[] arr = {"A" , "B" , "C"};
-        print(arr);
+        // 헤더토큰값 36
     }
-
-    static void print(String... arr) {
-        System.out.println(arr.length);
-        for (String msg : arr) {
-            System.out.println(msg);
-        }
-    }
-}
-
-class A {
-
-}
-
-class B extends A {
-
 }
