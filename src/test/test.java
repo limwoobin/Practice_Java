@@ -1,5 +1,8 @@
 package test;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+
 public class test {
     public static void main(String[] args) {
         String a = "935a2cdd-3d5c-4fc2-a7b0-18e462f5239f";
@@ -8,5 +11,14 @@ public class test {
         System.out.println(b.length());
 
         // 헤더토큰값 36
+        Hashtable table = new Hashtable();
+        table.put("a" , 1);
+        table.put("b" , 2);
+
+        HashMap map = new HashMap();
+        map.put("A" , 1);
+        map.put("B" , 2);
+        System.out.println(table);
+        System.out.println(map);
     }
 }
