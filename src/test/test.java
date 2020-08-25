@@ -36,3 +36,4 @@ enum Kind {
 abstract class TTT {
     abstract void hi();
 }
+
