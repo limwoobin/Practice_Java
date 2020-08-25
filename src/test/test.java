@@ -9,6 +9,12 @@ public class test {
         System.out.println(Kind.CLOVER. name());
         System.out.println(Kind.CLOVER.getText());
 
+        TTT t1 = new TTT() {
+            @Override
+            void hi() {
+
+            }
+        };
     }
 }
 
@@ -25,4 +31,8 @@ enum Kind {
     public String getText() {
         return text;
     }
+}
+
+abstract class TTT {
+    abstract void hi();
 }
