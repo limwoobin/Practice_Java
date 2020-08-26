@@ -9,12 +9,15 @@ public class test {
         System.out.println(Kind.CLOVER. name());
         System.out.println(Kind.CLOVER.getText());
 
-        TTT t1 = new TTT() {
-            @Override
-            void hi() {
+        Child child = new Child();
+        Parent parent = child; // 업캐스팅 - 생략가능
+        Child child2 = (Child) parent; // 다운캐스팅 - 생략불가능
 
-            }
-        };
+        child2.getChild();
+        child2.getParent(); // 자식은 부모의 요소 접근가능
+
+        parent.getParent();
+//        parent.getChild();  부모는 본인or부모의 요소에만 접근가능
     }
 }
 
@@ -37,3 +40,14 @@ abstract class TTT {
     abstract void hi();
 }
 
+class Parent {
+    public void getParent() {
+        System.out.println("parent");
+    }
+}
+
+class Child extends Parent {
+    public void getChild() {
+        System.out.println("child");
+    }
+}
