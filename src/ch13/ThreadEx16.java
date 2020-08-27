@@ -38,7 +38,6 @@ class RunImplEx16 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("run");
         while (!stopped) {
             if (!suspended) {
                 System.out.println(Thread.currentThread().getName());

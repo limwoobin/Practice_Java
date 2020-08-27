@@ -18,6 +18,7 @@ public class test {
 
         parent.getParent();
 //        parent.getChild();  부모는 본인or부모의 요소에만 접근가능
+
     }
 }
 
