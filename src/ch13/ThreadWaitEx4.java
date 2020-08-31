@@ -122,8 +122,9 @@ public class ThreadWaitEx4 {
         Table2 table = new Table2();
 
         new Thread(new Cook2(table) , "COOK1").start();
-        new Thread(new Customer2(table , "donut") , "CUST1");
-        new Thread(new Customer2(table , "burger") , "CUST2");
+//        new Thread(new Cook2(table)).start();
+        new Thread(new Customer2(table , "donut") , "CUST1").start();
+        new Thread(new Customer2(table , "burger") , "CUST2").start();
 
         Thread.sleep(2000);
         System.exit(0);
