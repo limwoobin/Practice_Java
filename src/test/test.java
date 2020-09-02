@@ -1,7 +1,6 @@
 package test;
 
-import java.util.HashMap;
-import java.util.Hashtable;
+import java.util.*;
 
 public class test {
     public static void main(String[] args) {
@@ -19,6 +18,13 @@ public class test {
         parent.getParent();
 //        parent.getChild();  부모는 본인or부모의 요소에만 접근가능
 
+
+        Map<String , Object> map = new HashMap<>();
+        map.put("A" , "A");
+        map.put("B" , "B");
+        map.put("C" , "C");
+        System.out.println(map.keySet());
+        System.out.println(map.values());
     }
 }
 
