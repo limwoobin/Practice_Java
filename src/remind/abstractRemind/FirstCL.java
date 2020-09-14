@@ -1,4 +1,4 @@
-package remind.abstractTest;
+package remind.abstractRemind;
 
 public class FirstCL extends Common {
 
