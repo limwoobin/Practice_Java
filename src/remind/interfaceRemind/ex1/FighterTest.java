@@ -1,4 +1,4 @@
-package remind.interfaceRemind;
+package remind.interfaceRemind.ex1;
 
 public class FighterTest {
     public static void main(String[] args) {
