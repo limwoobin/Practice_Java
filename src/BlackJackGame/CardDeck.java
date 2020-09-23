@@ -61,6 +61,7 @@ public class CardDeck {
 
     public Card draw() {
         Card selectCard = this.getRandomCard();
+        System.out.println("selectCard: " + selectCard.toString());
         cards.remove(selectCard);
         return selectCard;
     }

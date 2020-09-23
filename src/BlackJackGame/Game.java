@@ -13,5 +13,6 @@ public class Game {
         CardDeck cardDeck = new CardDeck();
 
         System.out.println(cardDeck.toString());
+        cardDeck.draw();
     }
 }
