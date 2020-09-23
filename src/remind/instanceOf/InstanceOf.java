@@ -1,4 +1,4 @@
-package remind;
+package remind.instanceOf;
 
 public class InstanceOf {
     public static void main(String[] args) {
