@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MessageTest {
-
     public void 메시지_타입이_EMAIL_KAKAO_SMS_일경우() {
         final Set<MessageType> types = new HashSet<>();
         types.add(MessageType.EMAIL);
