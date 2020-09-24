@@ -3,10 +3,12 @@ package BlackJackGame;
 public class Card {
     private String pattern;
     private String denomination;
+    private int point;
 
-    public Card(String pattern , String denomination) {
+    public Card(String pattern , int index) {
         this.pattern = pattern;
-        this.denomination = denomination;
+        this.denomination = this.numberToDenomination(index);
+        this.point = this.numberToPoint(index);
     }
 
     public String getPattern() {
@@ -25,11 +27,42 @@ public class Card {
         this.denomination = denomination;
     }
 
+    public int getPoint() {
+        return point;
+    }
+
+    public void setPoint(int point) {
+        this.point = point;
+    }
+
     @Override
     public String toString() {
         return "Card{" +
                 "pattern='" + pattern + '\'' +
                 ", denomination='" + denomination + '\'' +
                 '}';
+    }
+
+    private int numberToPoint(int number) {
+        if (number > 11) {
+            return 10;
+        }
+
+        return number;
+    }
+
+    private String numberToDenomination(int number) {
+
+        if (number == 1) {
+            return "A";
+        } else if (number == 11) {
+            return "J";
+        } else if (number == 12) {
+            return "Q";
+        } else if (number == 13) {
+            return "K";
+        }
+
+        return String.valueOf(number);
     }
 }
