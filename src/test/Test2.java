@@ -1,17 +1,16 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test2 {
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("A");
-        list.add("B");
-        list.add("C");
 
-        System.out.println(list.toString());
-        System.out.println(list.contains("B"));
-        System.out.println(list.contains("D"));
+    public static void main(String[] args) {
+        final Map<String , Object> map = new HashMap<>();
+        map.put("A" , 1);
+
+        System.out.println(map.toString());
+
+//        map = new HashMap<>();
     }
 }
