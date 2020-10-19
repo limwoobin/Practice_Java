@@ -1,4 +1,4 @@
-package Generic;
+package Generic.ex1;
 
 import java.util.EmptyStackException;
 
