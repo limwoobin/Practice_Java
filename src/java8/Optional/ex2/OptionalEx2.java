@@ -3,7 +3,7 @@ package java8.Optional.ex2;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
-public class OptionalTest2 {
+public class OptionalEx2 {
     private static final String NULL_DATA = null;
 
 

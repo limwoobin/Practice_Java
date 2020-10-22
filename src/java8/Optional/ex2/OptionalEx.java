@@ -2,7 +2,7 @@ package java8.Optional.ex2;
 
 import java.util.Optional;
 
-public class OptionalTest {
+public class OptionalEx {
     public static void main(String[] args) {
         // filter (true면 필터를 통과 , flase 면 통과 되지 않음)
         System.out.println(Optional.of("True").filter(v -> "True".equals(v)).orElse("NO DATA")); // -> True
