@@ -15,14 +15,14 @@ public class Run {
         Student student7 = new Student(69 , "은돔벨레");
 
         List<Student> students = Arrays.asList(student1 , student2 , student3 , student4 , student5 , student6 , student7);
-        List<Student> filterStudents = filterAGradeStudent(students , new GradePredicateA());
+        List<Student> filterStudents = filterGradeStudent(students , new GradePredicateA());
 
         for (Student student : filterStudents) {
             System.out.println(student.getName() + " : " + student.getPoint());
         }
     }
 
-    public static List<Student> filterAGradeStudent(List<Student> students , GradePredicate predicate) {
+    public static List<Student> filterGradeStudent(List<Student> students , GradePredicate predicate) {
         return students.stream().filter(student -> predicate.test(student)).collect(Collectors.toList());
     }
 }
