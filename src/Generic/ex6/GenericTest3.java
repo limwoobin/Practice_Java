@@ -16,6 +16,7 @@ public class GenericTest3 {
         longList.add(2L);
         longList.add(3L);
         listPrint2(longList);
+        listPrint3(longList);
     }
 
     static void listPrint(List<?> list) {
@@ -27,6 +28,12 @@ public class GenericTest3 {
     static void listPrint2(List<? extends Number> list) {
         for (Number n : list) {
             System.out.println(n);
+        }
+    }
+
+    static <U extends Number> void listPrint3(List<U> list) {
+        for (U u : list) {
+            System.out.println(u);
         }
     }
 }
